@@ -1,0 +1,23 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/MovieAppMVC
+    username: postgres
+    password: Telefon310
+#    hikari:
+#      auto-commit: false
+
+  main:
+    allow-circular-references: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
